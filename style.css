@@ -1,0 +1,360 @@
+/* General reset for padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    background: #1f3a6d; /* Dark blue */
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffc107; /* Yellow */
+}
+
+/* Hero section styling */
+.hero {
+    position: relative;
+    height: 500px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Send the video to the back */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 1; /* Bring the content above the video */
+}
+
+.hero h1 {
+    font-size: 3em;
+    background: rgba(31, 58, 109, 0.8); /* Dark blue with opacity */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Main section styling */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.introduction {
+    background: #ffffff;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.introduction h2 {
+    font-size: 2em;
+    color: #1f3a6d; /* Dark blue */
+    margin-bottom: 15px;
+}
+
+.introduction p {
+    line-height: 1.8;
+}
+
+.programs {
+    margin-top: 30px;
+}
+
+.program {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.program h3 {
+    font-size: 1.5em;
+    color: #1f3a6d; /* Dark blue */
+    margin-bottom: 10px;
+}
+
+.program p {
+    line-height: 1.6;
+}
+
+.quick-links {
+    margin-top: 30px;
+}
+
+.quick-links h2 {
+    font-size: 2em;
+    color: #1f3a6d; /* Dark blue */
+    margin-bottom: 15px;
+}
+
+.quick-links ul {
+    list-style: none;
+}
+
+.quick-links ul li {
+    margin-bottom: 10px;
+}
+
+.quick-links ul li a {
+    color: #1f3a6d; /* Dark blue */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.quick-links ul li a:hover {
+    color: #ffc107; /* Yellow */
+}
+
+/* About section styling */
+.about-section {
+    padding: 50px 0;
+    background: #ffffff;
+}
+
+.about-section .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 2.5em;
+    color: #1f3a6d; /* Dark blue */
+    margin-bottom: 30px;
+}
+
+.about-section h2 {
+    font-size: 2em;
+    color: #1f3a6d; /* Dark blue */
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Research section styling */
+.research-section {
+    padding: 50px 0;
+    background: #ffffff;
+}
+
+.research-section .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.research-section h1 {
+    font-size: 2.5em;
+    color: #1f3a6d; /* Dark blue */
+    margin-bottom: 30px;
+}
+
+.research-section .research-topic {
+    margin-bottom: 30px;
+}
+
+.research-section .research-topic h2 {
+    font-size: 1.8em;
+    color: #1f3a6d; /* Dark blue */
+    margin-bottom: 15px;
+}
+
+.research-section .research-topic p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* News section styling */
+.news-section {
+    padding: 50px 0;
+    background: #ffffff;
+}
+
+.news-section .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.news-section h1 {
+    font-size: 2.5em;
+    color: #1f3a6d; /* Dark blue */
+    margin-bottom: 30px;
+}
+
+.news-section .news-item {
+    margin-bottom: 30px;
+}
+
+.news-section .news-item h2 {
+    font-size: 1.8em;
+    color: #1f3a6d; /* Dark blue */
+    margin-bottom: 15px;
+}
+
+.news-section .news-item .date {
+    color: #888888;
+    margin-bottom: 10px;
+}
+
+.news-section .news-item p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Contact section styling */
+.contact-section {
+    padding: 50px 0;
+    background: #ffffff;
+}
+
+.contact-section .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 2.5em;
+    color: #1f3a6d; /* Dark blue */
+    margin-bottom: 30px;
+}
+
+.contact-section p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.contact-section .contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-section .contact-info h2 {
+    font-size: 1.8em;
+    color: #1f3a6d; /* Dark blue */
+    margin-bottom: 15px;
+}
+
+.contact-section .contact-info p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.contact-section .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section .contact-form h2 {
+    font-size: 1.8em;
+    color: #1f3a6d; /* Dark blue */
+    margin-bottom: 15px;
+}
+
+.contact-section .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.contact-section .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1f3a6d; /* Dark blue */
+}
+
+.contact-section .form-group input,
+.contact-section .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-section .form-group textarea {
+    resize: vertical;
+}
+
+.contact-section button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1f3a6d; /* Dark blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #ffc107; /* Yellow */
+}
+
+/* Footer styling */
+footer {
+    background: #1f3a6d; /* Dark blue */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    clear: both;
+}
+
